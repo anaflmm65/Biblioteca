@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página de Cadastro</title>
+    <style>
+        .container{
+        width: 650px;
+        height: 500px;
+        border-radius: 20px;
+        padding: 10px 25px;
+        margin: auto;
+        background-color: rgb(142, 147, 177);
+        box-shadow: 1 0 rgb(27, 27, 27);/*o primeiro as laterais, segundo:cima baixo, terceiro: suavidade*/
+        }
+        body{
+            background-color: rgb(180, 189, 197);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form label{
+            display: flex;
+            margin-bottom: -50px;
+        }
+        input{
+            /*lado esquerdo*/
+            /*calc(40%-80px), calculo para não fazer quebra na página**/
+            width: 400px;
+            margin-left: 200px;
+            border-width: 1px;
+            border-color:rgb(219, 219, 219);
+            padding: 10px 25px;
+            border-radius: 5px;
+        }
+        .texto-grande {
+            color: aliceblue;
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        .label{
+            /*label: lado direito*/
+            margin-left: 100x;
+            width: 30%;
+            padding: 10px 10px;
+        
+        }
+        .botao1{
+            width: 115px;
+            height: 40px;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #beb5b9; /* Cor de fundo azul */
+            color: #ffffff; /* Cor do texto branca */
+            font-weight: bold;
+            float: right;
+            margin: 5px;
+           
+        }
+        .botao2{
+            width: 120px;
+            height: 40px;
+            padding: 10px 20px;
+            margin-right: 5px;
+            background-color: #9c7386; /* Cor de fundo azul */
+            color: #ffffff; /* Cor do texto branca */
+            font-weight: bold;
+            float: right;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(180, 189, 197);">
+<div class="container">
+    <h1>Faça seu cadastro!</h1><br>
+            <form>
+                    <p class="texto-grande">
+                    <label class="label" for="text"> <b>Nome Completo: </b></label>
+                    <input type="text" id="name" name="name">
+
+                    <p class="texto-grande">
+                     <label class="label" for="text"><b>E-Mail: </b></label>
+                    <input type="text" id="name" name="name">
+
+                    <p class="texto-grande">
+                    <label class="label" for="nome"> <b>Cidade: </b></label>
+                    <input type="text" id="nome" name="nome">
+                    </p>
+
+                    <p class="texto-grande">
+                    <label class="label" for="nome"> <b>Telefone: </b></label>
+                    <input type="text" id="nome" name="nome">
+                    </p>
+
+                    <p class="texto-grande">
+                    <label class="label" for="senha"><b>Senha: </b></label>
+                    <input type="password" id="senha" name="senha">
+                    </p>
+    
+                    <p class="texto-grande" style="line-height: 1.5;">
+                    <label class="label" for="nome"> <b>Confirmar senha: </b></label>
+                    <input type="password" id="senha" name="senha">
+                    </p>
+    
+                    <p class="botoes">
+                    <input type="reset" class="botao2" value="Cadastrar">
+                    <input type="submit" class="botao1" value="Cancelar">
+    </form>
+</div>
+</body>
+</html>
+    
+</body>
+</html>
