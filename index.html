@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset= "UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Página de Cadastro</title>
     <style>
         .container{
-        width: 650px;
-        height: 500px;
-        border-radius: 20px;
-        padding: 10px 25px;
+        width: 600px;
+        height: 480px;
+        padding: 15px 25px;
         margin: auto;
-        background-color: rgb(142, 147, 177);
+        background-color:rgb(142, 147, 177);
         box-shadow: 1 0 rgb(27, 27, 27);/*o primeiro as laterais, segundo:cima baixo, terceiro: suavidade*/
         }
         body{
+            padding: 62px 10px;
             background-color: rgb(180, 189, 197);
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+            justify-content: center;
+            text-align: center;
         }
         form label{
             display: flex;
             margin-bottom: -50px;
+        }
+        h1{
+            text-align: center;
         }
         input{
             /*lado esquerdo*/
@@ -30,8 +35,7 @@
             margin-left: 200px;
             border-width: 1px;
             border-color:rgb(219, 219, 219);
-            padding: 10px 25px;
-            border-radius: 5px;
+            padding: 10px 0px;
         }
         .texto-grande {
             color: aliceblue;
@@ -42,8 +46,12 @@
             /*label: lado direito*/
             margin-left: 100x;
             width: 30%;
-            padding: 10px 10px;
+            padding: 10px 3px;
         
+        }
+        nav{
+            padding: 10px 10px;
+            text-align: center;
         }
         .botao1{
             width: 115px;
@@ -55,6 +63,7 @@
             font-weight: bold;
             float: right;
             margin: 5px;
+            font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
            
         }
         .botao2{
@@ -67,25 +76,21 @@
             font-weight: bold;
             float: right;
             margin: 5px;
+            font-family: 'Times New Roman', Times, serif;
         }
     </style>
 </head>
-<body style="background-color: rgb(180, 189, 197);">
+<body style="background-color: rgb(180, 189, 197)">
 <div class="container">
     <h1>Faça seu cadastro!</h1><br>
-            <form>
+        <form>
                     <p class="texto-grande">
                     <label class="label" for="text"> <b>Nome Completo: </b></label>
                     <input type="text" id="name" name="name">
 
                     <p class="texto-grande">
-                     <label class="label" for="text"><b>E-Mail: </b></label>
+                    <label class="label" for="text"><b>E-Mail: </b></label>
                     <input type="text" id="name" name="name">
-
-                    <p class="texto-grande">
-                    <label class="label" for="nome"> <b>Cidade: </b></label>
-                    <input type="text" id="nome" name="nome">
-                    </p>
 
                     <p class="texto-grande">
                     <label class="label" for="nome"> <b>Telefone: </b></label>
@@ -97,18 +102,19 @@
                     <input type="password" id="senha" name="senha">
                     </p>
     
-                    <p class="texto-grande" style="line-height: 1.5;">
+                    <p class="texto-grande">
                     <label class="label" for="nome"> <b>Confirmar senha: </b></label>
                     <input type="password" id="senha" name="senha">
                     </p>
+
+                    <nav>
+                        <a href="file:///C:/Users/anafl/OneDrive/%C3%81rea%20de%20Trabalho/Webprova/login/index.html" style="text-decoration: none;">Já tem uma conta? Faça seu Login!</a>
+                    </nav>
     
-                    <p class="botoes">
                     <input type="reset" class="botao2" value="Cadastrar">
                     <input type="submit" class="botao1" value="Cancelar">
-    </form>
-</div>
-</body>
-</html>
     
+        </form>
+</div>
 </body>
 </html>
